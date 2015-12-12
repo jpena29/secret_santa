@@ -6,3 +6,4 @@ from django.db import models
 class Information(models.Model):
 	person_name = models.CharField(max_length = 50)
 	person_email = models.CharField(max_length = 50)
+
