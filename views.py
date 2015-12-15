@@ -10,3 +10,6 @@ from .models import Information
 def index(request):
 	template = loader.get_template('secret/index.html')
 	return HttpResponse(template.render())
+
+def detail(request, number_of_people_id):
+	return HttpResponse("You're looking at the form number %s." % number_of_people_id)
